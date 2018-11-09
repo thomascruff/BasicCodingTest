@@ -10,5 +10,15 @@ Building the code:
 Executing the code:
 java -jar ./unemployment/target/unemployment.jar
 
+Postman
+Post request to 
+http://localhost:8080/retrieveStatistics
+
+Body of the request:
+{ "apikey":"superman","year":"","period":""}
+ apikey is ignored in this version
+ year can be any 4 digit year
+ period is any month as designated in the unemployment statistics (M01, M02, M03,...)
+
 Output
 In the local directory the data retrieved is saved as "UnemploymentStats.csv"
